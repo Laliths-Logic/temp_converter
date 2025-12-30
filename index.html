@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Temperature Converter – Lalith</h1>
+        <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin</p>
+    </header>
+
+    <section class="converter-section">
+        <h2>Temperature Conversion</h2>
+
+        <!-- Type label aligned left -->
+        <div class="type-row">
+            <span>Type:</span>
+        </div>
+        <input type="text" id="temperature" placeholder="Enter temperature">
+
+        <!-- From and To side by side -->
+        <div class="unit-inline">
+            <div class="unit-box">
+                <span>From:</span>
+                <select id="fromUnit">
+                    <option value="C">Celsius (°C)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <div class="unit-box">
+                <span>To:</span>
+                <select id="toUnit">
+                <option value="C">Fahrenheit (°F)</option>
+                    <option value="F">Celsius (°C)</option>
+                    <option value="K">Kelvin (K)</option>
+                </select>
+            </div>
+        </div>
+
+        <button onclick="convertTemperature()">Convert</button>
+
+        <div id="output"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Lalith. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
